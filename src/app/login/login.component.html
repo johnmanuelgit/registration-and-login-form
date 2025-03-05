@@ -1,0 +1,42 @@
+<div class="w-full h-full ">
+    <div>
+  <img class="fixed h-full w-full object-cover" src="assets/image.jpg">
+  <h1 class="absolute left-20 top-5 font-bold text-2xl p-1"><i class="fa-solid fa-chart-pie fa-spin"></i> Travelista Tours <i class="fa-solid fa-face-smile-beam"></i></h1>
+  <div class="absolute left-8 top-30">
+  <h1 class="font-bold text-6xl text-left p-1">Let's Grow your</h1>
+  <h1 class="font-bold text-6xl text-left p-1">Business</h1>
+  <h3 class="font-bold text-3xl text-left text-white opacity-70 p-1 mt-5">Social Media Marketing & Management</h3>
+  </div>
+  </div>
+  <div class="flex justify-end p-10">
+  <div class="bg-blue-200 p-10 rounded-3xl w-130 h-145 absolute top-8 right-10">
+  <form #singUpForm="ngForm" (ngSubmit)="onSubmit(singUpForm)" class="form">
+    <h1 class="font-bold text-6xl text-left p-1">Welcome Back</h1>
+    <p class="text-left p-1 text-base font-normal">Welcome back! Please enter your details.</p>
+  
+  <p class="mt-5 p-2">
+    <label for="email"class="block text-sm font-small">Email</label>
+    <input type="text" class="shadow-xl p-2 boder rounded bg-blue-100 w-100" placeholder="sjohn...@gmail.com" id="email" name="email" ngModel>
+  </p>
+  <p class="mt-5 p-2">
+    <label for="password" class="block text-sm font-small">Password</label>
+    <input type="password" class="shadow-xl p-2 boder rounded bg-blue-100 w-100" placeholder="************" id="password" name="password"ngModel>
+  </p>
+  <div class="flex gap-25 p-3">
+    <p><input type="checkbox"> Remember for 30 days</p> <p class="text-blue-900">forgot password</p></div>
+  
+  
+  <div class="flex justify-center mt-5">
+    <button type="submit" class="bg-blue-500 text-white w-100 h-10 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Sign in</button>
+  </div>
+  
+  <div class="flex justify-center mt-5">
+    <button type="submit" class="bg-blue-100 opacity-75 text-black w-100 h-10 rounded hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300">Sign in with Google</button>
+  </div>
+  <p class="flex justify-center mt-5 gap-2">Don't have an account?<a [routerLink]="['new']" class="text-blue-900"> Sign up</a></p>
+  
+  </form>
+  </div>
+  </div>
+  </div>
+  
