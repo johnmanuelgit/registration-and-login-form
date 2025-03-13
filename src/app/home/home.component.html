@@ -1,0 +1,12 @@
+<nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">Dashboard</div>
+      <div class="space-x-15">
+        <a [routerLink]="['/home']" class="hover:text-gray-300">Home</a>
+        <a [routerLink]="['/login']" class="hover:text-gray-300">Login</a>
+        <a [routerLink]="['/signup']" class="hover:text-gray-300">Register</a>
+        <button (click)="logout()" class="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <img class="fixed w-screen h-screen object-contain" src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?t=st=1740421124~exp=1740424724~hmac=d3114ba237a46d662470740baea73c36bbacefc017afef15a6c7025c09933cac&w=740"alt="image">

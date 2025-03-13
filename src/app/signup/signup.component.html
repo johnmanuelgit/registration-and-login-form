@@ -2,7 +2,7 @@
 <div class="fixed h-full w-1/2">
     <img class="w-full h-full object-cover" src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?t=st=1740421124~exp=1740424724~hmac=d3114ba237a46d662470740baea73c36bbacefc017afef15a6c7025c09933cac&w=740"alt="image">
      <div class="absolute inset-0 text-center p-6">
-       <h1 class="text-blue-500 text-4xl font-bold  font-serif ">Travelista Tours</h1>
+       <h1 class="text-blue-500 text-4xl font-bold font-serif">Travelista Tours</h1>
      </div>
    <div class="fixed top-0 right-0 h-full w-1/2 bg-white  p-6 overflow-scroll">
    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
@@ -40,7 +40,7 @@
        </div>
      </div>
    
-     <button type="submit" [disabled]="signupForm.invalid" [ngClass]="signupForm.invalid ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-300' "class="w-50 px-4 py-2 bg-blue-600 text-white font-bold rounded-md ml-55 mt-1">Sign Up</button>
+     <button type="submit" [disabled]="signupForm.invalid" [ngClass]="signupForm.invalid ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-300' "class="w-50 px-4 py-2 bg-blue-600 text-white font-bold rounded-md ml-55 mt-1"[routerLink]="'/login'">Sign Up</button>
      <div class="flex items-center justify-center my-4">
        <hr class=" border-t border-black-300 w-12">
        <span class="px-3 text-black-700 font-medium">OR</span>
@@ -59,7 +59,7 @@
        </button>
      </div>
    
-     <p class="flex justify-center mt-2 gap-2">Already have an account?<a href="#" class="text-1xl font-bold mb4  text-blue-400"> Login</a></p>
+     <p class="flex justify-center mt-2 gap-2">Already have an account?<a [routerLink]="['login']" class="text-1xl font-bold mb4  text-blue-400"> Login</a></p>
    </form>
    </div>
   </div>
